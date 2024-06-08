@@ -1,4 +1,4 @@
-from datetime import datetime #Імпориуємо моду 
+from datetime import datetime #Імпориуємо модуль 
 
 def get_days_from_today(date): #Створюємо функцію
     while True:
