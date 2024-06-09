@@ -10,3 +10,7 @@ def normalize_num(phone_number): #Створення функції
         if num.isdigit(): # Метод для посторонніх символів якщо це не цифра
                 clean_number += num # Додаємо цифру до номеру 
     return clean_number # Повернення чистого номеру
+
+assert(normalize_num('    0502312343')) == "+380502312343"
+assert(normalize_num("38(050)123412      ")) == '+38050123412'
+assert(normalize_num("    +380758021503    ")) == '+380758021503'
